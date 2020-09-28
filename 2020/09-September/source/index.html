@@ -8,7 +8,9 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+		<link rel="stylesheet" href="dist/theme/moon.css" id="theme">
+
+    <script src="https://kit.fontawesome.com/977651eddf.js" crossorigin="anonymous"></script>
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
@@ -16,24 +18,206 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+        <section data-transition="fade">
+          <img src="img/espruino.png" width="50%" class="no-border" style="background: none;border: none;box-shadow: none; max-width: 400px">
+        </section>
+        <section>
+          <p>
+            <img src="img/psp_.jpg" alt="" style="width:230px;">
+          </p>
+          <h2 class="fragment fade">
+            Paul Spenke
+          </h2>
+          <span class="fragment fade is-size-5">
+						#Engineer
+					</span>
+          <span class="fragment fade  is-size-5">
+						#Webdeveloper
+					</span>
+          <span class="fragment fade  is-size-5">
+						#HungryFoolish
+					</span>
+          <p class="fragment fade">
+            <img src="img/fyndeezy.png" style="width: 200px">
+          </p>
+          <p class="fragment fade">
+            <i class="fab fa-github"></i> deepDiverPaul
+          </p>
+        </section>
+        <section>
+          <h2 class="fragment fade">
+            What do we talk about?
+          </h2>
+          <p class="fragment fade-in-then-semi-out">
+            Espruino?
+          </p>
+          <p class="fragment fade-in-then-semi-out">
+            What does it look like?
+          </p>
+          <p class="fragment fade-in-then-semi-out">
+            How does it work?
+          </p>
+          <p class="fragment fade-in-then-semi-out">
+            What can I do with it?
+          </p>
+          <p class="fragment fade-in-then-semi-out">
+            Where can I get it?
+          </p>
+        </section>
+        <section>
+          <h2 class="fragment fade">
+            Espruino?
+          </h2>
+          <p class="fragment fade-in-then-semi-out">
+            open-source JavaScript interpreter for microcontrollers (as low as 8kB RAM)
+          </p>
+          <p class="fragment fade-in-then-semi-out">
+            started in 2012 by Gordon Williams
+          </p>
+          <p class="fragment fade-in-then-semi-out">
+            got open-source with 1<sup>st</sup> Kickstarter in 2013
+          </p>
+          <p class="fragment fade-in-then-semi-out">
+            4 Kickstarters altogether
+          </p>
+          <p class="fragment fade-in-then-semi-out">
+            7 official boards / 20+ 3<sup>rd</sup>-party supported
+          </p>
+        </section>
+        <section>
+          <h2 class="fragment ">
+            What does it look like
+          </h2>
+          <div class="r-stack">
+            <p class="fragment fade-in-then-out">
+              <img src="img/original_side-600x500.jpg" style="width: 40vh"><br>
+              <span class="is-size-5"><a href="https://www.espruino.com/Original">Original Espruino</a></span>
+            </p>
+            <p class="fragment fade-in-then-out">
+              <img src="img/pico_pinned_side-600x500.jpg" style="height: 40vh"><br>
+              <span class="is-size-5"><a href="https://www.espruino.com/Pico">Espruino Pico</a></span>
+            </p>
+            <p class="fragment fade-in-then-out">
+              <img src="img/P1070569-600x500.jpeg" style="height: 40vh"><br>
+              <span class="is-size-5"><a href="https://www.espruino.com/WiFi">Espruino WiFi</a></span>
+            </p>
+            <p class="fragment fade-in-then-out">
+              <img src="img/P1050453bs-600x500.jpeg" style="height: 40vh"><br>
+              <span class="is-size-5"><a href="https://www.espruino.com/MDBT42Q">Espruino MDBT42Q</a></span>
+            </p>
+            <p class="fragment fade-in-then-out">
+              <img src="img/parts_side-1000x800.jpg" style="height: 40vh"><br>
+              <span class="is-size-5"><a href="https://www.espruino.com/Puck.js">Espruino Puck.js</a></span>
+            </p>
+            <p class="fragment fade-in-then-out">
+              <img src="img/pixljs_front_angle-600x500.jpeg" style="height: 40vh"><br>
+              <span class="is-size-5"><a href="https://www.espruino.com/Pixl.js">Espruino Pixl.js</a></span>
+            </p>
+            <p class="fragment fade-in">
+              <img src="img/bangle_parts_sq-600x500.jpg" style="height: 40vh"><br>
+              <span class="is-size-5"><a href="https://www.espruino.com/Bangle.js">Espruino Bangle.js</a></span>
+            </p>
+          </div>
+        </section>
+        <section>
+          <h2 class="fragment">
+            How does it work
+          </h2>
+          <p class="fragment fade-in-then-semi-out">
+            works literally right out of the box
+          </p>
+          <p class="fragment fade-in-then-semi-out">
+            BluetoothLE or USB
+          </p>
+          <p class="fragment fade-in-then-semi-out">
+            Web IDE
+          </p>
+          <p class="fragment fade-in-then-semi-out">
+            JavaScript or Blockly-Language
+          </p>
+          <p class="fragment fade-in-then-semi-out">
+            App-catalog for Bangle.js
+          </p>
+        </section>
+        <section>
+          <h2>
+            Web IDE
+          </h2>
+          <iframe data-src="https://espruino.com/ide" data-preload style="width: 90%; height: 50vh"></iframe>
+        </section>
+        <section>
+          <h2>
+            App-catalog
+          </h2>
+          <iframe data-src="https://banglejs.com/apps" data-preload style="width: 90%; height: 50vh"></iframe>
+        </section>
+        <section>
+          <h2 class="fragment">
+            Can I get any help?
+          </h2>
+          <p class="fragment fade-in-then-semi-out">
+            libraries for most sensors, actuators and displays
+          </p>
+          <p class="fragment fade-in-then-semi-out">
+            loads of tutorials online
+          </p>
+          <p class="fragment fade-in-then-semi-out">
+            caring community
+          </p>
+        </section>
+        <section>
+          <h2 class="fragment slide">
+            What can I do with it?
+          </h2>
+          <p class="fragment fade-in-then-semi-out">
+            home sensors with web-interface (library provided)
+          </p>
+          <p class="fragment fade-in-then-semi-out">
+            remote for PC or TV (IR or Bluetooth keyboard)
+          </p>
+          <p class="fragment fade-in-then-semi-out">
+            games
+          </p>
+          <p class="fragment fade-in-then-semi-out">
+            tinkering
+          </p>
+        </section>
+        <section>
+          <h2 class="fragment slide">
+            Where can I get it?
+          </h2>
+          <p class="fragment fade-in-then-semi-out">
+            <a href="https://shop.espruino.com/">Espruino Shop</a>
+          </p>
+          <p class="fragment fade-in-then-semi-out">
+            <a href="hhttps://shop.pimoroni.com/products/espruino-pico">Pimoroni</a>
+          </p>
+          <p class="fragment fade-in-then-semi-out">
+            <a href="https://thepihut.com/collections/vendors?q=Espruino">The PiHut</a>
+          </p>
+        </section>
+        <section>
+          <h2 class="fragment slide">
+            Thank you.
+          </h2>
+        </section>
 			</div>
 		</div>
 
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
-				hash: true,
-
+        controls: false,
+        progress: false,
+        pdfSeparateFragments: false,
+        hash: true,
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealHighlight, RevealNotes ]
 			});
 		</script>
 	</body>
